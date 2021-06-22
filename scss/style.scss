@@ -31,28 +31,43 @@ header {
   color: $w;
   text-shadow: 0 0 4px black;
   padding-left: 2%;
-  padding-bottom: 2%;
-  display: flex;
-  flex-direction: column;
+  padding-top: 20%;
 }
 
-.header_menu {
+.header_menu-theme {
   padding-top: 2%;
   background-color: $b;
 }
 
 header h1 {
   font-size: 22px;
-  padding-top: 25vh;
+  padding-top: 20px;
 }
 
 header h2 {
-  font-size: 17px;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 800px) {
+  header {
+    display: grid;
+    height: 55vh;
+    align-self: end;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    display: grid;
+    height: 65vh;
+    align-self: end;
+  }
+}
+
+@media screen and (min-width: 1100px) {
   .menu-parts li {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
   }
 
   .header {
@@ -64,15 +79,19 @@ header h2 {
 
   header {
     display: grid;
-    height: 55vh;
+    height: 90vh;
     align-self: end;
   }
 
+  .header_menu {
+    background:
+      linear-gradient(to bottom, rgb(0, 0, 0) 0%, #00000000 30%),
+  }
 
 
   header h1 {
-    font-size: 25px;
-    padding-top: 30vh;
+    font-size: 30px;
+    padding-top: 25px;
   }
 }
 
@@ -105,6 +124,7 @@ header h2 {
   text-align: center;
   padding-bottom: 15px;
   padding-top: 40px;
+  font-weight: bold;
 }
 
 .menu__toggler {
@@ -130,7 +150,7 @@ header h2 {
 .fab {
   margin: 0;
   padding-bottom: 0;
-  padding-top: 16px;
+  padding-top: 18px;
 }
 
 .menu__link:hover {
@@ -167,7 +187,7 @@ header h2 {
 		border-right: 1px solid $w;
 	}
 
-  .header_menu {
+  .header_menu-theme {
     background-color: $b;
   }
 }
@@ -237,10 +257,12 @@ header h2 {
   color: $w;
 }
 
-.box-galery H2 {
+.box-galery h2 {
   text-align: center;
   color: $w;
   margin-top: 0;
+  font-size: 25px;
+
 }
 
 .galery {
@@ -329,6 +351,7 @@ header h2 {
 .story h2 {
   margin-top: 0;
   text-align: center;
+  font-size: 25px;
 }
 
 @media screen and (min-width: 800px) {
@@ -368,8 +391,9 @@ header h2 {
   margin-bottom: 0;
 }
 
-.production-section H2 {
+.production-section h2 {
   text-align: center;
+  font-size: 25px;
 }
 
 .production-box p {
@@ -440,6 +464,7 @@ header h2 {
 .reference h2 {
   text-align: center;
   padding-bottom: 2%;
+  font-size: 25px;
 }
 
 /*reference*/
