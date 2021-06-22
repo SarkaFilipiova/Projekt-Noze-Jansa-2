@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nože Jansa</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/0495b04fe4.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+        <div class="header_menu">
+            <div class="logo-box">
+                <a href="/"><h1 class="logo">Nože Jansa<h1></a>
+            </div>
+            <div>
+                <nav class="menu">
+                    <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+                    <label for="menu-checkbox" class="menu__toggler">☰</label>
+
+                    <ul class="menu-parts">
+                        <li class="menu_item"><a class="menu__link" href="/">Hlavní strana</a></li>
+                        <li class="menu_item"><a class="menu__link" href="/pages/galerie">Galerie nožů</a></li>
+                        <li class="menu_item"><a class="menu__link" href="/pages/filozofie">Má filozofie</a></li>
+                        <li class="menu_item"><a class="menu__link" href="/pages/reference">Reference</a></li>
+                        <li class="menu_item"><a class="menu__link" href="/pages/kontakt">Kontakt</a></li>
+                        <a href="https://www.instagram.com/renda.knives/"><i class="fab fa-instagram"></i></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    <main class="main">
+
+        {{ content | safe }}
+
+    </main>
+
+    <footer>Vytvořila: Šárka Filipiová</footer>
+
+    <script src="/js/fslightbox.js"></script>
+</body>
+</html>
