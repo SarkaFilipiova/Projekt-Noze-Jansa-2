@@ -54,12 +54,12 @@ header {
     padding-top: 20%;
   }
 
-  header h1 {
+  .header_h h1 {
     font-size: 22px;
     padding-top: 20px;
   }
 
-  header h2 {
+  .header_h h2 {
     font-size: 20px;
   }
 }
@@ -74,12 +74,12 @@ header {
     padding-top: 20%;
   }
 
-  header h1 {
+  .header_h h1 {
     font-size: 22px;
     padding-top: 20px;
   }
 
-  header h2 {
+  .header_h h2 {
     font-size: 20px;
   }
 }
@@ -94,12 +94,12 @@ header {
     padding-top: 20%;
   }
 
-  header h1 {
+  .header_h h1 {
     font-size: 22px;
     padding-top: 20px;
   }
 
-  header h2 {
+  .header_h h2 {
     font-size: 20px;
   }
 }
