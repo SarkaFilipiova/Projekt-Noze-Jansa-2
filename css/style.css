@@ -11,10 +11,11 @@ body {
   font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
+  background-color: black;
 }
 
 .header {
-  background: linear-gradient(to top, #0c0c0c 0%, #00000000 20%), url("/images/plachtak-uvod.jpg") no-repeat center/cover;
+  background: url("/images/plachtak-uvod.jpg") no-repeat center/cover;
 }
 
 header {
@@ -112,17 +113,13 @@ header {
   }
 
   .header {
-    background: linear-gradient(to top, #0c0c0c 0%, #00000000 20%), url("/images/plachtak-uvod.jpg") no-repeat center/cover;
+    background: url("/images/plachtak-uvod.jpg") no-repeat center/cover;
   }
 
   header {
     display: grid;
     height: 90vh;
     align-self: end;
-  }
-
-  .header_menu {
-    background: linear-gradient(to bottom, black 0%, #00000000 30%);
   }
 
   .header_h h1 {
@@ -132,6 +129,32 @@ header {
 
   .header_h h2 {
     font-size: 25px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .menu-parts li {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 4px black;
+  }
+
+  .header {
+    background: url("/images/plachtak-uvod.jpg") no-repeat center/cover;
+  }
+
+  header {
+    display: grid;
+    height: 90vh;
+    align-self: end;
+  }
+
+  .header_h h1 {
+    font-size: 60px;
+    padding-top: 15vh;
+  }
+
+  .header_h h2 {
+    font-size: 50px;
   }
 }
 /*menu*/
@@ -146,6 +169,11 @@ header {
   text-shadow: 0 0 4px black;
 }
 
+@media screen and (min-width: 1500px) {
+  .logo {
+    font-size: 80px;
+  }
+}
 .logo-box h1 {
   margin: 0;
 }
@@ -230,43 +258,6 @@ header {
   }
 }
 /*menu*/
-/*ikony*/
-.icon_pic {
-  max-width: 50%;
-}
-
-.section_icons {
-  display: flex;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  background-color: #0c0b0b;
-  margin-bottom: 0;
-  justify-content: space-around;
-}
-
-.section_icons p {
-  text-align: center;
-  font-size: 14px;
-  color: white;
-}
-
-.section_icons img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 800px) {
-  .section_icons {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-/*ikony*/
 /*galerie*/
 .knife-box img {
   width: 100%;
@@ -299,6 +290,11 @@ header {
   padding-bottom: 30px;
 }
 
+@media screen and (min-width: 1500px) {
+  .box-galery h2 {
+    font-size: 50px;
+  }
+}
 .galery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50px, 300px));
@@ -317,6 +313,11 @@ header {
   margin-right: auto;
 }
 
+@media screen and (min-width: 1500px) {
+  .box-galery p {
+    font-size: 25px;
+  }
+}
 .box-galery {
   background-color: #0c0b0b;
   margin-top: 0;
@@ -330,6 +331,7 @@ header {
   width: 50%;
   height: 50%;
   max-height: 400px;
+  max-width: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -359,6 +361,27 @@ header {
   color: white;
 }
 
+.story h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1500px) {
+  .story h2 {
+    font-size: 50px;
+  }
+
+  .story h3 {
+    font-size: 30px;
+  }
+
+  .story p {
+    font-size: 25px;
+  }
+}
 .story {
   padding-left: 5%;
   padding-right: 5%;
@@ -376,14 +399,6 @@ header {
 
 .story {
   background: linear-gradient(to bottom, #0c0c0c 0%, #00000000 20%), linear-gradient(to top, #0c0c0c 0%, #00000000 20%), url("/images/moss-1.jpg") no-repeat center/cover;
-}
-
-.story h2 {
-  margin-top: 0;
-  text-align: center;
-  font-size: 25px;
-  padding-top: 60px;
-  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 800px) {
@@ -428,6 +443,11 @@ header {
   padding-bottom: 30px;
 }
 
+@media screen and (min-width: 1500px) {
+  .production-section h2 {
+    font-size: 50px;
+  }
+}
 .production-box p {
   margin: 0;
   text-align: center;
@@ -554,6 +574,39 @@ header {
   background: linear-gradient(to bottom, #1c1919 0%, #00000000 20%), linear-gradient(to top, #0c0c0c 0%, #00000000 20%), url("/images/background-c.jpg") no-repeat center/cover;
 }
 
+@media screen and (min-width: 1500px) {
+  .adress h2 {
+    font-size: 50px;
+  }
+
+  .adress a, p {
+    font-size: 25px;
+  }
+
+  .form h3 {
+    font-size: 40px;
+  }
+
+  .form-inside {
+    font-size: 25px;
+  }
+
+  .form-inside input {
+    height: 50px;
+  }
+
+  .form-inside textarea {
+    height: 70px;
+  }
+
+  .contact {
+    gap: 200px;
+  }
+
+  .form {
+    padding-top: 10px;
+  }
+}
 /*formulář*/
 /*buttons*/
 .button-secondary {
@@ -584,34 +637,31 @@ a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1500px) {
+  .button-secondary {
+    font-size: 30px;
+  }
+}
 /*buttons*/
 /*footer*/
-footer {
+.footer {
   background-color: #0c0b0b;
   color: white;
-  padding-left: 2%;
-  padding-bottom: 5px;
-  padding-top: 15%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 10px;
 }
 
-/*footer*/
-.vyska {
-  grid-row: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
+.footer-topbox {
+  padding-bottom: 2.5rem;
 }
 
-.plus-background {
-  padding-bottom: 300px;
+.footer-box {
+  position: relative;
+  min-height: 10vh;
+  background-color: #0c0b0b;
 }
 
-.scroll {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer-main {
-  padding-top: 10%;
-  padding-bottom: 2%;
-}/*# sourceMappingURL=style.css.map */
+/*footer*//*# sourceMappingURL=style.css.map */
