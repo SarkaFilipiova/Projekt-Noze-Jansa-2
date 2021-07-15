@@ -131,18 +131,48 @@ header {
 
 
   .header_h h1 {
+    font-size: 35px;
+    padding-top: 20vh;
+  }
+  
+  .header_h h2 {
     font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .menu-parts li {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 4px black;
+    padding-top: 16px;
+  }
+
+  .header {
+    background:
+      url("/images/plachtak-uvod.jpg") no-repeat center/cover;
+  }
+
+  header {
+    display: grid;
+    height: 90vh;
+    align-self: end;
+  }
+
+
+  .header_h h1 {
+    font-size: 40px;
     padding-top: 15vh;
   }
   
   .header_h h2 {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1600px) {
   .menu-parts li {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     text-shadow: 0 0 4px black;
   }
@@ -161,11 +191,16 @@ header {
 
   .header_h h1 {
     font-size: 60px;
-    padding-top: 15vh;
+    padding-top: 10vh;
   }
   
   .header_h h2 {
     font-size: 50px;
+  }
+
+  .fab {
+    font-size: 35px;
+    padding-top: 22px;
   }
 }
 
@@ -233,6 +268,20 @@ header {
   margin: 0;
   padding-bottom: 0;
   padding-top: 18px;
+}
+
+@media screen and (min-width: 1450px) {
+  .fab {
+    font-size: 30px;
+    padding-top: 33px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .fab {
+    font-size: 35px;
+    padding-top: 38px;
+  }
 }
 
 .menu__link:hover {
@@ -479,6 +528,7 @@ header {
 .production-box p {
   margin: 0;
   text-align: center;
+  color: $w;
 }
 
 @media screen and (min-width: 800px) {
@@ -506,46 +556,6 @@ header {
 /*výroba*/
 
 /*reference*/
-
-.reference img {
-  max-width: 100px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.reference-box {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding-left: 2%;
-  padding-right: 2%;
-  justify-content: center;
-}
-
-.reference {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-}
-
-.reference-person {
-  max-width: 250px;
-
-  padding-top: 2%;
-}
-
-.reference-person p {
-  text-align: center;
-  color: white;
-  font-size: 14px;
-}
-
-.reference h2 {
-  text-align: center;
-  padding-bottom: 2%;
-  font-size: 25px;
-}
 
 /*reference*/
 
@@ -618,7 +628,7 @@ header {
 .contact-reference {
   background:
       linear-gradient(to bottom, rgb(28, 25, 25) 0%, #00000000 20%),
-      linear-gradient(to top, rgb(12, 12, 12) 0%, #00000000 20%),
+      linear-gradient(to top, rgb(24, 23, 23) 0%, #00000000 20%),
       url("/images/background-c.jpg") no-repeat center/cover;
 }
 
