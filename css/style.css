@@ -124,7 +124,7 @@ header {
 
   .header_h h1 {
     font-size: 35px;
-    padding-top: 20vh;
+    padding-top: 2vh;
   }
 
   .header_h h2 {
@@ -156,37 +156,6 @@ header {
 
   .header_h h2 {
     font-size: 35px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .menu-parts li {
-    font-size: 40px;
-    font-weight: bold;
-    text-shadow: 0 0 4px black;
-  }
-
-  .header {
-    background: url("/images/plachtak-uvod.jpg") no-repeat center/cover;
-  }
-
-  header {
-    display: grid;
-    height: 90vh;
-    align-self: end;
-  }
-
-  .header_h h1 {
-    font-size: 60px;
-    padding-top: 10vh;
-  }
-
-  .header_h h2 {
-    font-size: 50px;
-  }
-
-  .fab {
-    font-size: 35px;
-    padding-top: 22px;
   }
 }
 /*menu*/
@@ -257,12 +226,6 @@ header {
   .fab {
     font-size: 30px;
     padding-top: 33px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .fab {
-    font-size: 35px;
-    padding-top: 38px;
   }
 }
 .menu__link:hover {
